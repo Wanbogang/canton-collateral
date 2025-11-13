@@ -1,0 +1,53 @@
+@startuml
+!theme plain
+skinparam monochrome true
+skinparam shadowing false
+skinparam defaultFontName Arial
+
+title Daml Collateral Mobility Architecture
+
+actor "Bank A" as Bank
+actor "Broker B" as Broker
+actor "Custodian C" as Custodian
+
+box "Daml Canton Network" #LightGrey
+participant "JSON API" as API
+participant "Ledger" as Ledger
+database "Contract Store" as DB
+end box
+
+== Pledge Workflow ==
+
+activate Bank
+Bank -> API: POST /v1/create (PledgeAgreement)
+activate API
+API -> Ledger: Submit Create Command
+activate Ledger
+Ledger -> DB: Store new contract
+activate DB
+DB --> Ledger: Confirmation
+deactivate DB
+Ledger --> API: Return Contract ID
+deactivate Ledger
+API --> Bank: {"result": {"contractId": "..."}}
+deactivate API
+deactivate Bank
+
+== Release Workflow ==
+
+activate Broker
+Broker -> API: POST /v1/exercise (Release)
+activate API
+API -> Ledger: Submit Exercise Command
+activate Ledger
+Ledger -> DB: Archive contract
+activate DB
+DB --> Ledger: Confirmation
+deactivate DB
+Ledger --> API: Return success
+deactivate Ledger
+API --> Broker: {"result": {"events": [{"archived": ...}]}}
+deactivate API
+deactivate Broker
+
+@enduml

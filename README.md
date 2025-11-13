@@ -6,7 +6,7 @@
 
 ## 🏗️ Architecture
 
-*(Diagram will be added here)*
+![Architecture Diagram](docs/architecture.png)
 
 ## ⚙️ How to Run (Setup)
 
