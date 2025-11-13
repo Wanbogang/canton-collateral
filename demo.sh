@@ -12,12 +12,21 @@ BROKERB_ID="party-693be0ce-23bf-4ae8-9f9a-52a930632753::1220d751f283b04ca60cc2fc
 TEMPLATE_ID="df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977:PledgeAgreement:PledgeAgreement"
 
 # --- HELPER FUNCTIONS ---
+
+# NEW FUNCTION: Find the currently running ledger ID
+get_ledger_id() {
+  # The ledger ID is printed in the log during startup
+  # This command finds the last occurrence of "ledgerId" and extracts the value
+  grep -oP 'ledgerId' daml.start.log | tail -1 | grep -oP '"[^"]*"'
+}
+
 create_token() {
   local PARTY_ID=$1
+  # We now use the dynamic LEDGER_ID variable
   python3 -c "
 import jwt, time
 payload = {
-    'ledgerId': '$LEDGER_ID',
+    'ledgerId': '$(get_ledger_id)',
     'applicationId': 'collateral-app',
     'actAs': ['$PARTY_ID'],
     'readAs': [],
