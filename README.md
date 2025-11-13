@@ -41,13 +41,18 @@ The `demo.sh` script demonstrates the full lifecycle:
 3.  **Verify:** The system queries the ledger to confirm the contract is archived.
 
 ## 📁 Project Structure
-.
 ├── daml/ # Daml source code
+
 │ ├── Main.daml # Setup script
+
 │ ├── PledgeAgreement.daml # Core contract template
+
 │ └── CollateralToken.daml # Tokenized asset template
+
 ├── demo.sh # Automated demo script
+
 ├── daml.yaml # Daml project configuration
+
 └── README.md # This documentation
 
 
