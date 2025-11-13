@@ -1,0 +1,5 @@
+SDK 3.4.7 has been released!
+See https://github.com/digital-asset/daml/releases/tag/v3.4.7 for details.
+
+Slf4jLogger started
+Running CoordinatedShutdown with reason [ActorSystemTerminateReason]

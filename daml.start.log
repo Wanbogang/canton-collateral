@@ -1,0 +1,137 @@
+SDK 3.4.7 has been released!
+See https://github.com/digital-asset/daml/releases/tag/v3.4.7 for details.
+
+SDK 3.4.7 has been released!
+See https://github.com/digital-asset/daml/releases/tag/v3.4.7 for details.
+
+Running single package build of collateral-project as no multi-package.yaml was found.
+
+2025-11-13 04:43:04.73 [INFO]  [build] 
+Compiling collateral-project to a DAR.
+File:     daml/PledgeAgreement.daml
+Hidden:   no
+Range:    3:1-3:19
+Source:   typecheck
+Severity: DsWarning
+Message: 
+[0;93mdaml/PledgeAgreement.daml:3:1: warning:
+    The import of ‘Daml.Script’ is redundant
+      except perhaps to import instances from ‘Daml.Script’
+    To import instances alone, use: import Daml.Script()[0m
+
+2025-11-13 04:43:05.83 [INFO]  [build] 
+Created .daml/dist/collateral-project-0.0.1.dar
+Waiting for canton sandbox to start.
+Uploading .daml/dist/collateral-project-0.0.1.dar to localhost:6865
+DAR upload succeeded.
+Waiting for navigator to start: 
+11:43:51,750 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version ?
+11:43:51,753 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - No custom configurators were discovered as a service.
+11:43:51,753 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+11:43:51,755 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+11:43:51,782 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+11:43:51,783 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+11:43:51,819 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 30 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+11:43:51,819 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+11:43:51,821 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+11:43:51,844 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [/home/yunaiko/.daml/sdk/2.10.2/daml-sdk/navigator-logback.xml] at [file:/home/yunaiko/.daml/sdk/2.10.2/daml-sdk/navigator-logback.xml]
+11:43:52,177 |-WARN in ch.qos.logback.core.joran.action.ParamAction - <param> element is deprecated in favor of a more direct syntax.At line 18
+11:43:52,177 |-WARN in ch.qos.logback.core.joran.action.ParamAction - For details see http://logback.qos.ch/codes.html#param
+11:43:52,295 |-WARN in ch.qos.logback.core.model.processor.AppenderModelHandler - Appender named [STDOUT] not referenced. Skipping further processing.
+11:43:52,296 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDERR]
+11:43:52,297 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+11:43:52,316 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:43:52,359 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [FILE]
+11:43:52,359 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+11:43:52,363 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+11:43:52,412 |-INFO in ch.qos.logback.core.FileAppender[FILE] - File property is set to [navigator.log]
+11:43:52,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ASYNC]
+11:43:52,414 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.classic.AsyncAppender]
+11:43:52,423 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [FILE] to ch.qos.logback.classic.AsyncAppender[ASYNC]
+11:43:52,423 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC] - Attaching appender named [FILE] to AsyncAppender.
+11:43:52,424 |-INFO in ch.qos.logback.classic.AsyncAppender[ASYNC] - Setting discardingThreshold to 51
+11:43:52,426 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [user-facing-logs] to INFO
+11:43:52,432 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting additivity of logger [user-facing-logs] to true
+11:43:52,435 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDERR] to Logger[user-facing-logs]
+11:43:52,436 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to INFO
+11:43:52,436 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ASYNC] to Logger[ROOT]
+11:43:52,436 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@402c4085 - End of configuration.
+11:43:52,438 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@6fa51cd4 - Registering current configuration as safe fallback point
+11:43:52,438 |-INFO in ch.qos.logback.classic.util.ContextInitializer@57a78e3 - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 617 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+   _  __          _           __
+  / |/ /__ __  __(_)__ ____ _/ /____  ____
+ /    / _ `/ |/ / / _ `/ _ `/ __/ _ \/ __/
+/_/|_/\_,_/|___/_/\_, /\_,_/\__/\___/_/
+                 /___/
+Version 2.10.2
+
+Warning: 'daml navigator' is deprecated and will be removed in Daml 3.0.
+Frontend running at http://localhost:7500.
+/usr/bin/xdg-open: 882: x-www-browser: not found
+/usr/bin/xdg-open: 882: firefox: not found
+/usr/bin/xdg-open: 882: iceweasel: not found
+/usr/bin/xdg-open: 882: seamonkey: not found
+/usr/bin/xdg-open: 882: mozilla: not found
+/usr/bin/xdg-open: 882: epiphany: not found
+/usr/bin/xdg-open: 882: konqueror: not found
+/usr/bin/xdg-open: 882: chromium: not found
+/usr/bin/xdg-open: 882: chromium-browser: not found
+/usr/bin/xdg-open: 882: google-chrome: not found
+/usr/bin/xdg-open: 882: www-browser: not found
+/usr/bin/xdg-open: 882: links2: not found
+/usr/bin/xdg-open: 882: elinks: not found
+/usr/bin/xdg-open: 882: links: not found
+/usr/bin/xdg-open: 882: lynx: not found
+/usr/bin/xdg-open: 882: w3m: not found
+xdg-open: no method available for opening 'http://localhost:7500'
+...............Waiting for JSON API to start: 
+2025-11-13 04:44:06.025 [main] INFO  com.daml.http.Main - Config(ledgerHost=localhost, ledgerPort=6865, address=127.0.0.1, httpPort=7575, https=None, portFile=None, packageReloadInterval=5 seconds, packageMaxInboundMessageSize=None, maxInboundMessageSize=4194304, tlsConfig=TlsConfiguration(false,None,None,None,None,REQUIRE,false,None), jdbcConfig=None, staticContentConfig=None, authConfig=None, allowNonHttps=true, wsConfig=None, nonRepudiationCertificateFile=None, nonRepudiationPrivateKeyFile=None, nonRepudiationPrivateKeyAlgorithm=None, surrogateTpIdCacheMaxEntries=None), context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:07.674 [http-json-ledger-api-pekko.actor.default-dispatcher-6] INFO  o.a.pekko.event.slf4j.Slf4jLogger - Slf4jLogger started 
+2025-11-13 04:44:08.850 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.HttpService - HTTP Server pre-startup, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:09.231 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.LedgerClient - Attempting to connect to the ledger localhost:6865 (600 attempts), context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:10.398 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.LedgerClient - Attempt 1/600 succeeded!, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:10.401 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.LedgerClient - Attempting to connect to the ledger localhost:6865 (600 attempts), context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:10.411 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.LedgerClient - Attempt 1/600 succeeded!, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:10.412 [http-json-ledger-api-pekko.actor.default-dispatcher-7] INFO  com.daml.http.HttpService - contractDao: None, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+..................[93m
+Press 'r' to re-build and upload the package to the sandbox.
+Press 'Ctrl-C' to quit.
+[0mdaml: <stdin>: hGetChar: end of file
+2025-11-13 04:44:12.204 [http-json-ledger-api-pekko.actor.default-dispatcher-11] INFO  com.daml.http.Main - Started server: (ServerBinding(/127.0.0.1:7575),None), context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709"} 
+2025-11-13 04:44:12.834 [http-json-ledger-api-pekko.actor.default-dispatcher-10] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/readyz from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "3b66ad19-6bcd-4d6d-9473-5a5fa80d4243"} 
+2025-11-13 04:44:12.854 [http-json-ledger-api-pekko.actor.default-dispatcher-10] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "3b66ad19-6bcd-4d6d-9473-5a5fa80d4243"} 
+2025-11-13 05:47:30.510 [http-json-ledger-api-pekko.actor.default-dispatcher-23] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "0ab9f776-0962-4582-80b5-d340c4ddd3ff"} 
+2025-11-13 05:47:31.010 [http-json-ledger-api-pekko.actor.default-dispatcher-24] INFO  com.daml.http.Endpoints - Responding to client with HTTP 401 Unauthorized, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "0ab9f776-0962-4582-80b5-d340c4ddd3ff"} 
+2025-11-13 05:50:24.475 [http-json-ledger-api-pekko.actor.default-dispatcher-27] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "284eb230-3cd5-413e-9dc0-8ec7f0e4518b"} 
+2025-11-13 05:50:24.483 [http-json-ledger-api-pekko.actor.default-dispatcher-28] INFO  com.daml.http.Endpoints - Responding to client with HTTP 401 Unauthorized, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "284eb230-3cd5-413e-9dc0-8ec7f0e4518b"} 
+2025-11-13 05:52:02.252 [http-json-ledger-api-pekko.actor.default-dispatcher-23] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b5cb57af-f174-4c5b-9e3e-3caf613c5e78"} 
+2025-11-13 05:52:02.255 [http-json-ledger-api-pekko.actor.default-dispatcher-27] INFO  com.daml.http.Endpoints - Responding to client with HTTP 401 Unauthorized, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b5cb57af-f174-4c5b-9e3e-3caf613c5e78"} 
+2025-11-13 05:55:03.293 [http-json-ledger-api-pekko.actor.default-dispatcher-23] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b2a3f65f-bd22-48f8-b96d-b89d2244164e"} 
+2025-11-13 05:55:03.300 [http-json-ledger-api-pekko.actor.default-dispatcher-34] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["BankA"],"applicationId":"collateral-app","exp":1763016832,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 05:55:03.421 [http-json-ledger-api-pekko.actor.default-dispatcher-34] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b2a3f65f-bd22-48f8-b96d-b89d2244164e"} 
+2025-11-13 05:55:06.525 [http-json-ledger-api-pekko.actor.default-dispatcher-37] INFO  com.daml.http.PackageService - new package IDs loaded: 18597917bc74b69da52b6868f118979353b62ebec4363329cd3d843b46e76702, 86828b9843465f419db1ef8a8ee741d1eef645df02375ebf509cdc8c3ddd16cb, 5921708ce82f4255deb1b26d2c05358b548720938a5a325718dc69f381ba47ff, cc348d369011362a5190fe96dd1f0dfbc697fdfd10e382b9e9666f0da05961b7, df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977, 99a2705ed38c1c26cbb8fe7acf36bbf626668e167a33335de932599219e0a235, e22bce619ae24ca3b8e6519281cb5a33b64b3190cc763248b4c3f9ad5087a92c, d58cf9939847921b2aab78eaa7b427dc4c649d25e6bee3c749ace4c3f52f5c97, 6c2c0667393c5f92f1885163068cd31800d2264eb088eb6fc740e11241b2bf06, 315cb5676675c14e71453d4a9a2a58900e5b50d6665cba4cdf21f58b22abff83, 8a7806365bbd98d88b4c13832ebfa305f6abaeaf32cfa2b7dd25c4fa489b79fb, c1f1f00558799eec139fb4f4c76f95fb52fa1837a5dd29600baa1c8ed1bdccfd, 733e38d36a2759688a4b2c4cec69d48e7b55ecc8dedc8067b815926c917a182a, 1cc0ce9df7722b71fdfd172e9684c4855a7946a4a6933e784c7d9de8fac081c9, e8b3e0650dc0245a4a42133eb3b71b2ac7c3e03f25ee4df378b8089210a1bb6d, bf5d87e92f338ea2367741d6cfb9a1fa02f93c167cef6eb08e76e1a44474b746, 65921e553a353588e950cbc87e98a127730e63295f7ad8d3adae952ef0133b3e, f20de1e4e37b92280264c08bf15eca0be0bc5babd7a7b5e574997f154c00cb78, 3f4deaf145a15cdcfa762c058005e2edb9baa75bb7f95a4f8f6f937378e86415, bfcd37bd6b84768e86e432f5f6c33e25d9e7724a9d42e33875ff74f6348e733f, 6df2d1fd8ea994ed048a79587b2722e3a887ac7592abf31ecf46fe09ac02d689, 57b5c520512c24035057aa4c783cb7ac7f3f49db29806280962e188be7aadb66, e4cc67c3264eba4a19c080cac5ab32d87551578e0f5f58b6a9460f91c7abc254, 518032f41fd0175461b35ae0c9691e08b4aea55e62915f8360af2cc7a1f2ba6c, 6851f194e144b693e63e9034b956c76cef6b5088dd8c66a657ab652a204dba2b, 6839a6d3d430c569b2425e9391717b44ca324b88ba621d597778811b2d05031d, cb0552debf219cc909f51cbb5c3b41e9981d39f8f645b1f35e2ef5be2e0b858a, 76bf0fd12bd945762a01f8fc5bbcdfa4d0ff20f8762af490f8f41d6237c6524f, 852d8e3a8ccf952acc73e17522846bc1eb41498e840d637e519ddcca7dbc7671, 10e0333b52bba1ff147fc408a6b7d68465b157635ee230493bd6029b750dcb05, d14e08374fc7197d6a0de468c968ae8ba3aadbf9315476fd39071831f5923662, 057eed1fd48c238491b8ea06b9b5bf85a5d4c9275dd3f6183e0e6b01730cc2ba, 38e6274601b21d7202bb995bc5ec147decda5a01b68d57dda422425038772af7, e491352788e56ca4603acc411ffe1a49fefd76ed8b163af86cf5ee5f4c38645b, 40f452260bef3f29dede136108fc08a88d5a5250310281067087da6f0baddff7, 97b883cd8a2b7f49f90d5d39c981cf6e110cf1f1c64427a28a6d58ec88c43657, 671ba5c19c9df53e9d1d3025b3edb2186a687b1a75331e88a1119bfaed27fd4b, context: {ledger_id: "sandbox", request_id: "b2a3f65f-bd22-48f8-b96d-b89d2244164e", instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", application_id: "collateral-app", read_as: "List()", act_as: "List(BankA)"} 
+2025-11-13 05:56:13.664 [http-json-ledger-api-pekko.actor.default-dispatcher-36] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "608e0c69-0b64-4089-afe1-6353d0b444f7"} 
+2025-11-13 05:56:13.668 [http-json-ledger-api-pekko.actor.default-dispatcher-34] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["BankA"],"applicationId":"collateral-app","exp":1763016832,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 05:56:13.672 [http-json-ledger-api-pekko.actor.default-dispatcher-34] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "608e0c69-0b64-4089-afe1-6353d0b444f7"} 
+2025-11-13 05:59:16.584 [http-json-ledger-api-pekko.actor.default-dispatcher-36] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "224e8d4f-7607-441e-ab73-f56a35595a91"} 
+2025-11-13 05:59:16.587 [http-json-ledger-api-pekko.actor.default-dispatcher-23] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-7a75974e-60f7-4471-a8ad-f324e34fdcc6::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763017121,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 05:59:16.590 [http-json-ledger-api-pekko.actor.default-dispatcher-23] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "224e8d4f-7607-441e-ab73-f56a35595a91"} 
+2025-11-13 10:27:01.409 [http-json-ledger-api-pekko.actor.default-dispatcher-46] INFO  com.daml.http.Endpoints - Incoming POST request on http://localhost:7575/v1/exercise from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "025dac9a-c76b-4878-ac02-4a739c4ed73c"} 
+2025-11-13 10:27:01.755 [http-json-ledger-api-pekko.actor.default-dispatcher-50] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-693be0ce-23bf-4ae8-9f9a-52a930632753::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763032971,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 10:27:02.258 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.CommandService - Submitting exercise command, context: {command_id: "38cbe885-fb87-4527-8788-b91eae02ffd1", ledger_id: "sandbox", instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", application_id: "collateral-app", read_as: "List()", act_as: "List(party-693be0ce-23bf-4ae8-9f9a-52a930632753::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a)", request_id: "025dac9a-c76b-4878-ac02-4a739c4ed73c", choice: "Release", template_id: "TemplateId(df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977,PledgeAgreement,PledgeAgreement)", contract_id: ""} 
+2025-11-13 10:27:07.162 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "025dac9a-c76b-4878-ac02-4a739c4ed73c"} 
+2025-11-13 10:27:58.710 [http-json-ledger-api-pekko.actor.default-dispatcher-54] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b62f4da3-be7d-48c1-8c27-94573af13346"} 
+2025-11-13 10:27:58.716 [http-json-ledger-api-pekko.actor.default-dispatcher-46] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-7a75974e-60f7-4471-a8ad-f324e34fdcc6::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763017121,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 10:27:58.734 [http-json-ledger-api-pekko.actor.default-dispatcher-46] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "b62f4da3-be7d-48c1-8c27-94573af13346"} 
+2025-11-13 10:29:33.520 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.Endpoints - Incoming POST request on http://localhost:7575/v1/create from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "25e47065-67eb-4f7b-884c-a3d00610eb1a"} 
+2025-11-13 10:29:33.536 [http-json-ledger-api-pekko.actor.default-dispatcher-46] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-7a75974e-60f7-4471-a8ad-f324e34fdcc6::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763033373,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 10:29:33.612 [http-json-ledger-api-pekko.actor.default-dispatcher-46] INFO  com.daml.http.CommandService - Submitting create command, context: {command_id: "688b1fe7-af73-4cda-8775-88423c60d99a", ledger_id: "sandbox", request_id: "25e47065-67eb-4f7b-884c-a3d00610eb1a", instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", application_id: "collateral-app", template_id: "TemplateId(df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977,PledgeAgreement,PledgeAgreement)", read_as: "List()", act_as: "List(party-7a75974e-60f7-4471-a8ad-f324e34fdcc6::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a)"} 
+2025-11-13 10:29:34.063 [http-json-ledger-api-pekko.actor.default-dispatcher-46] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "25e47065-67eb-4f7b-884c-a3d00610eb1a"} 
+2025-11-13 10:29:34.252 [http-json-ledger-api-pekko.actor.default-dispatcher-47] INFO  com.daml.http.Endpoints - Incoming POST request on http://localhost:7575/v1/exercise from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "26d78677-c302-4539-9fa9-3dbe0deb1067"} 
+2025-11-13 10:29:34.256 [http-json-ledger-api-pekko.actor.default-dispatcher-50] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-693be0ce-23bf-4ae8-9f9a-52a930632753::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763033374,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 10:29:34.259 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.CommandService - Submitting exercise command, context: {command_id: "bb653a58-762b-4817-9978-608bbc1dc362", ledger_id: "sandbox", instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", application_id: "collateral-app", read_as: "List()", act_as: "List(party-693be0ce-23bf-4ae8-9f9a-52a930632753::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a)", request_id: "26d78677-c302-4539-9fa9-3dbe0deb1067", choice: "Release", template_id: "TemplateId(df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977,PledgeAgreement,PledgeAgreement)", contract_id: ""} 
+2025-11-13 10:29:34.545 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "26d78677-c302-4539-9fa9-3dbe0deb1067"} 
+2025-11-13 10:29:34.585 [http-json-ledger-api-pekko.actor.default-dispatcher-45] INFO  com.daml.http.Endpoints - Incoming GET request on http://localhost:7575/v1/query?template_ids=df84d1f6420fafde22fe4600050183faa09f6e75c840c0f0754ba8b3dca81977:PledgeAgreement:PledgeAgreement from unknown, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "1c0ee5b2-810a-4afb-9fda-67d28d07184b"} 
+2025-11-13 10:29:34.589 [http-json-ledger-api-pekko.actor.default-dispatcher-50] WARN  c.d.l.api.auth.AuthServiceJWTCodec$ - Token {"actAs":["party-7a75974e-60f7-4471-a8ad-f324e34fdcc6::1220d751f283b04ca60cc2fc3a2beb034085b422d312c3c96f9343f125b8df849a3a"],"applicationId":"collateral-app","exp":1763033373,"ledgerId":"sandbox","readAs":[]} is using a deprecated JWT payload format 
+2025-11-13 10:29:34.593 [http-json-ledger-api-pekko.actor.default-dispatcher-50] INFO  com.daml.http.Endpoints - Responding to client with HTTP 200 OK, context: {instance_uuid: "aee127c0-87ac-4474-b36c-2c9d71481709", request_id: "1c0ee5b2-810a-4afb-9fda-67d28d07184b"} 

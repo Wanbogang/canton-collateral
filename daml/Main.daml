@@ -1,0 +1,21 @@
+module Main where
+
+import Daml.Script
+import PledgeAgreement
+
+setup : Script ()
+setup = script do
+  bankA <- allocateParty "BankA"
+  brokerB <- allocateParty "BrokerB"
+  custodianC <- allocateParty "CustodianC"
+
+  -- contoh collateral pledge (contract akan tetap aktif karena kita tidak exercise Release di demo)
+  let collateralId = "BOND-001"
+  _pact <- submit bankA do
+    createCmd PledgeAgreement with
+      collateralOwner = bankA
+      collateralReceiver = brokerB
+      collateralId = collateralId
+
+  -- NOTE: kita sengaja TIDAK melakukan `exercise Release` di demo agar kontrak tetap aktif
+  return ()

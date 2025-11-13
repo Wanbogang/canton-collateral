@@ -1,0 +1,17 @@
+module PledgeAgreement where
+
+import Daml.Script
+
+template PledgeAgreement
+  with
+    collateralOwner : Party
+    collateralReceiver : Party
+    collateralId : Text
+  where
+    signatory collateralOwner
+    observer collateralReceiver
+
+    choice Release : ()
+      controller collateralReceiver
+      do
+        return ()
